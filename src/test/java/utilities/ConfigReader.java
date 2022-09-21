@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-public class CongiReader {
+public class ConfigReader {
     // 1-> Properties objesi olusturacagiz
    static Properties properties;
     // 2-> Bu class'in amaci configuration.properties dosyasini okumak

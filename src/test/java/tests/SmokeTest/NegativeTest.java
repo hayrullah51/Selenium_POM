@@ -18,8 +18,11 @@ public class NegativeTest {
     @Test(priority = 1)
     public void yanlisSifre() throws InterruptedException {
 
-        qaConcortPage = new QAConcortPage();
-        qaConcortPage.giris();
+        QAConcortPage qaConcortPage = new QAConcortPage();
+        Driver.getDriver().get(ConfigReader.getProperty("CHQAUrl"));
+        Driver.getDriver().findElement(By.xpath("//button[@id='details-button']")).click();
+        Thread.sleep(2000);
+        Driver.getDriver().findElement(By.xpath("//a[@id='proceed-link']")).click();
         qaConcortPage.log_in.click();
         qaConcortPage.usernameBox.sendKeys(ConfigReader.getProperty("CHQAValidUsername"));
         qaConcortPage.passwordBox.sendKeys(ConfigReader.getProperty("CHQAInvalidPassword"));

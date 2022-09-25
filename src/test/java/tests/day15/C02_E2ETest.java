@@ -12,7 +12,7 @@ import utilities.Driver;
 
 public class C02_E2ETest {
 
-    @Test
+    @Test(groups = "birinci Grup")
     public void test() throws InterruptedException {
 
         QAConcortPage qaConcortPage = new QAConcortPage();

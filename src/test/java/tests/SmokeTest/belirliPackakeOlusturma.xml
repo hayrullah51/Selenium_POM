@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="packake calistirma" verbose="1">
+    <test name="packake calistirma">
+        <packages>
+            <package name="tests.SmokeTest"></package>
+        </packages>
+
+    </test>
+
+</suite>

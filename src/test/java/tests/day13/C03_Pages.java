@@ -22,6 +22,7 @@ public class C03_Pages  extends TestBase {
         Assert.assertTrue(amazonPage.ilkUrun.getText().contains("Java"),"Aranan urunde Java ismi gecmiyor!!!");
 
 
+        driver.close();
 
     }
 
